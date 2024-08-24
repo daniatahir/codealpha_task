@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#background-video{
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    filter: brightness(30%);
+    position: fixed;
+}
+.content h1{
+    color: ghostwhite;
+    font-size: 90px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+    border-color: rebeccapurple;
+}
+.content{
+    bottom: 30%;
+    position: fixed;
+    text-align: center;
+    margin-left: 20%;
+}
+.content a{
+    padding: 10px;
+    font-size: 40px;
+    list-style: none;
+    text-decoration: none;
+    border-radius:10px ;
+    cursor: pointer;
+    transition: transform 0.5s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    text-align: center;
+    border: 5px solid ghostwhite ;
+    background: transparent;
+    color: ghostwhite;
+}
+.content a:hover{
+    border: 5px solid ghostwhite ;
+    color: black;
+    background-color: ghostwhite;
+    transform: translate(5px);
+}
+.images img{
+    width: fit-content;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0;
+    filter: drop-shadow(30px 10px 4px #000000);
+   
+}
+.img1{
+    animation: fadeIn 1s ease-in-out forwards;
+}
+.img2{
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+.img3{
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+.img4{
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+.images{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+
+}
